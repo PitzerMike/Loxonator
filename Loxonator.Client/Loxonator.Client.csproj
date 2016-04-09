@@ -106,10 +106,10 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <None Include="..\Resources\TestFiles\Empty.loxone">
+    <Content Include="..\Resources\TestFiles\Empty.loxone">
       <Link>Empty.loxone</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
+    </Content>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -123,14 +123,14 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="..\Resources\TestFiles\TestInitial.xml">
+    <Content Include="..\Resources\TestFiles\TestInitial.xml">
       <Link>TestInitial.xml</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Resource>
-    <Resource Include="..\Resources\TestFiles\TestModified.xml">
+    </Content>
+    <Content Include="..\Resources\TestFiles\TestModified.xml">
       <Link>TestModified.xml</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Resource>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

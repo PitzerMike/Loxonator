@@ -77,6 +77,58 @@ namespace Loxonator.Common.Helpers
             File.Copy(originalFile, backupFile, true);
         }
 
+        private static void ApplyActor(Template templ, Node leaf, ref XElement lastActor)
+        {
+            if (!leaf.IsActor)
+            {
+                templ.OriginalNodes.Where(node => node.Attribute("EibAddr").Value == leaf.Address && node.Attribute("Type").Value == "EIBactor").Remove();
+            }
+            else
+            {
+                List<XElement> existing = templ.OriginalNodes.Where(node => node.Attribute("EibAddr").Value == leaf.Address && node.Attribute("Type").Value == "EIBactor").ToList();
+                if (existing.Count > 0)
+                {
+                    foreach (XElement actor in existing)
+                    {
+                        actor.Attribute("Title").Value = leaf.Name;
+                        actor.Attribute("EIBType").Value = ((int)leaf.Type).ToString();
+                    }
+                }
+                else
+                {
+                    XElement newActor = XElement.Parse(CreateActor(leaf, templ));
+                    lastActor.AddAfterSelf(newActor);
+                    lastActor = newActor;
+                }
+            }
+        }
+
+        private static void ApplySensor(Template templ, Node leaf, ref XElement lastSensor)
+        {
+            if (!leaf.IsSensor)
+            {
+                templ.OriginalNodes.Where(node => node.Attribute("EibAddr").Value == leaf.Address && node.Attribute("Type").Value == "EIBsensor").Remove();
+            }
+            else
+            {
+                List<XElement> existing = templ.OriginalNodes.Where(node => node.Attribute("EibAddr").Value == leaf.Address && node.Attribute("Type").Value == "EIBsensor").ToList();
+                if (existing.Count > 0)
+                {
+                    foreach (XElement actor in existing)
+                    {
+                        actor.Attribute("Title").Value = leaf.Name;
+                        actor.Attribute("EIBType").Value = ((int)leaf.Type).ToString();
+                    }
+                }
+                else
+                {
+                    XElement newSensor = XElement.Parse(CreateSensor(leaf, templ));
+                    lastSensor.AddAfterSelf(newSensor);
+                    lastSensor = newSensor;
+                }
+            }
+        }
+
         public static void ExportProjectFile(Node root, string projectFile)
         {
             XDocument project = XDocument.Load(projectFile);
@@ -91,19 +143,8 @@ namespace Loxonator.Common.Helpers
             XElement lastSensor = project.Root.Elements().Where(c => c.Attribute("Type").Value == "EIBsensorCaption").First();
             foreach (Node leaf in root.AllLeafs)
             {
-                templ.OriginalNodes.Where(node => node.Attribute("EibAddr").Value == leaf.Address).Remove(); // so we don't end up with multiple nodes with the same address
-                if (leaf.IsActor)
-                {
-                    XElement newActor = XElement.Parse(CreateActor(leaf, templ));
-                    lastActor.AddAfterSelf(newActor);
-                    lastActor = newActor;
-                }
-                if (leaf.IsSensor)
-                {
-                    XElement newSensor = XElement.Parse(CreateSensor(leaf, templ));
-                    lastSensor.AddAfterSelf(newSensor);
-                    lastSensor = newSensor;
-                }
+                ApplyActor(templ, leaf, ref lastActor);
+                ApplySensor(templ, leaf, ref lastSensor);
             }
             BackupOriginalFile(projectFile);
             project.Save(projectFile);

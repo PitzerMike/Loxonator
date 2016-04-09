@@ -9,6 +9,7 @@ using System.Windows.Input;
 using Loxonator.Common.Helpers;
 using System.Windows;
 using System.Collections.ObjectModel;
+using System.Reflection;
 
 namespace Loxonator.Client
 {
@@ -48,6 +49,14 @@ namespace Loxonator.Client
         public ObservableCollection<Node> Tree
         {
             get { return this.tree; }
+        }
+
+        public string Title
+        {
+            get
+            {
+                return "Loxonator " + Assembly.GetExecutingAssembly().GetName().Version.ToString();
+            }
         }
 
         public string ImportFile

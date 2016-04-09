@@ -20,7 +20,7 @@
       <GroupAddress Name="Zentral Aus Apartment Heizung Frostschutz" Address="0/0/16" />
     </GroupRange>
     <GroupRange Name="Szenen" RangeStart="256" RangeEnd="511">
-      <GroupAddress Name="Szene ein" Address="0/1/0" />
+      <GroupAddress Name="Szene ein (neuer Name)" Address="0/1/0" />
     </GroupRange>
     <GroupRange Name="Sonstiges" RangeStart="512" RangeEnd="767">
       <GroupAddress Name="Dämmerung" Address="0/2/0" />

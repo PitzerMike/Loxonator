@@ -14,10 +14,6 @@
       <GroupAddress Name="Zentral Aus Zimmer Nord Apartment" Address="0/0/10" />
       <GroupAddress Name="Zentral Aus Wohnzimmer Apartment" Address="0/0/11" />
       <GroupAddress Name="Zentral-Aus Apartment" Address="0/0/12" />
-      <GroupAddress Name="Zentral-Aus Privat Heizung Standby" Address="0/0/13" />
-      <GroupAddress Name="Zentral Aus Privat Heizung Frostschutz" Address="0/0/14" />
-      <GroupAddress Name="Zentral-Aus Apartment Heizung Standby" Address="0/0/15" />
-      <GroupAddress Name="Zentral Aus Apartment Heizung Frostschutz" Address="0/0/16" />
     </GroupRange>
     <GroupRange Name="Szenen" RangeStart="256" RangeEnd="511">
       <GroupAddress Name="Szene ein" Address="0/1/0" />
