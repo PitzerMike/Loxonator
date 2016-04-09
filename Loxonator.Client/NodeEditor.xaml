@@ -1,0 +1,25 @@
+﻿<UserControl x:Class="Loxonator.Client.NodeEditor"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:local="clr-namespace:Loxonator.Client"
+             mc:Ignorable="d" d:DesignHeight="300" d:DesignWidth="180">
+    <UserControl.Resources>
+        <local:EnumDescriptionConverter x:Key="enumConverter" />
+        <local:InheritedColorConverter x:Key="colorConverter" />
+    </UserControl.Resources>
+    <StackPanel Orientation="Vertical">
+        <CheckBox IsChecked="{Binding Path=IsSensor, Mode=TwoWay}" Content="Sensor" Margin="0,0,0,2" Foreground="{Binding Path=IsSensorInherited, Converter={StaticResource colorConverter}}" />
+        <CheckBox IsChecked="{Binding Path=IsActor, Mode=TwoWay}" Content="Aktor" Margin="0,0,0,2" Foreground="{Binding Path=IsActorInherited, Converter={StaticResource colorConverter}}" />
+        <TextBlock Text="Typ" Margin="0,0,0,2" Foreground="{Binding Path=IsTypeInherited, Converter={StaticResource colorConverter}}" />
+        <ComboBox SelectedItem="{Binding Path=Type, Mode=TwoWay}" ItemsSource="{Binding Path=PossibleTypes}"
+                  Foreground="{Binding Path=IsTypeInherited, Converter={StaticResource colorConverter}}">
+            <ComboBox.ItemTemplate>
+                <DataTemplate>
+                    <TextBlock Text="{Binding Converter={StaticResource enumConverter}}"/>
+                </DataTemplate>
+            </ComboBox.ItemTemplate>
+        </ComboBox>
+    </StackPanel>
+</UserControl>

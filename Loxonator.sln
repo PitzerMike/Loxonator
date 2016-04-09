@@ -1,0 +1,80 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Loxonator", "Loxonator\Loxonator.csproj", "{14512480-5D97-4FDB-B0D0-0F0599BEC4D8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Loxonator.Common", "Loxonator.Common\Loxonator.Common.csproj", "{C14CA5CE-4C89-4EBB-A10E-02E70246FEB3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Loxonator.Client", "Loxonator.Client\Loxonator.Client.csproj", "{8D3241FE-5311-4E33-B442-328A94F1155D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Resources", "Resources", "{00BECED1-9F10-465B-B046-E9CAD92EE972}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Icons", "Icons", "{042F9B87-0FC3-43E6-92C7-1ADE684EE92A}"
+	ProjectSection(SolutionItems) = preProject
+		Resources\Icons\Loxonator.ico = Resources\Icons\Loxonator.ico
+		Resources\Icons\Loxonator.png = Resources\Icons\Loxonator.png
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Format", "Format", "{F460D6E7-7798-4A0B-A418-0075694BD2EF}"
+	ProjectSection(SolutionItems) = preProject
+		Resources\Format\AlleEISTypen.Loxone = Resources\Format\AlleEISTypen.Loxone
+		Resources\Format\FormatInfos.txt = Resources\Format\FormatInfos.txt
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TestFiles", "TestFiles", "{52EF4729-B2C5-4AD6-AA8D-FD02BAD1639B}"
+	ProjectSection(SolutionItems) = preProject
+		Resources\TestFiles\Empty.loxone = Resources\TestFiles\Empty.loxone
+		Resources\TestFiles\TestInitial.xml = Resources\TestFiles\TestInitial.xml
+		Resources\TestFiles\TestModified.xml = Resources\TestFiles\TestModified.xml
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{14512480-5D97-4FDB-B0D0-0F0599BEC4D8}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{14512480-5D97-4FDB-B0D0-0F0599BEC4D8}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{14512480-5D97-4FDB-B0D0-0F0599BEC4D8}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{14512480-5D97-4FDB-B0D0-0F0599BEC4D8}.Debug|x86.ActiveCfg = Debug|x86
+		{14512480-5D97-4FDB-B0D0-0F0599BEC4D8}.Debug|x86.Build.0 = Debug|x86
+		{14512480-5D97-4FDB-B0D0-0F0599BEC4D8}.Release|Any CPU.ActiveCfg = Release|x86
+		{14512480-5D97-4FDB-B0D0-0F0599BEC4D8}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{14512480-5D97-4FDB-B0D0-0F0599BEC4D8}.Release|Mixed Platforms.Build.0 = Release|x86
+		{14512480-5D97-4FDB-B0D0-0F0599BEC4D8}.Release|x86.ActiveCfg = Release|x86
+		{14512480-5D97-4FDB-B0D0-0F0599BEC4D8}.Release|x86.Build.0 = Release|x86
+		{C14CA5CE-4C89-4EBB-A10E-02E70246FEB3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C14CA5CE-4C89-4EBB-A10E-02E70246FEB3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C14CA5CE-4C89-4EBB-A10E-02E70246FEB3}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{C14CA5CE-4C89-4EBB-A10E-02E70246FEB3}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{C14CA5CE-4C89-4EBB-A10E-02E70246FEB3}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{C14CA5CE-4C89-4EBB-A10E-02E70246FEB3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C14CA5CE-4C89-4EBB-A10E-02E70246FEB3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C14CA5CE-4C89-4EBB-A10E-02E70246FEB3}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{C14CA5CE-4C89-4EBB-A10E-02E70246FEB3}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{C14CA5CE-4C89-4EBB-A10E-02E70246FEB3}.Release|x86.ActiveCfg = Release|Any CPU
+		{8D3241FE-5311-4E33-B442-328A94F1155D}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{8D3241FE-5311-4E33-B442-328A94F1155D}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{8D3241FE-5311-4E33-B442-328A94F1155D}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{8D3241FE-5311-4E33-B442-328A94F1155D}.Debug|x86.ActiveCfg = Debug|x86
+		{8D3241FE-5311-4E33-B442-328A94F1155D}.Debug|x86.Build.0 = Debug|x86
+		{8D3241FE-5311-4E33-B442-328A94F1155D}.Release|Any CPU.ActiveCfg = Release|x86
+		{8D3241FE-5311-4E33-B442-328A94F1155D}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{8D3241FE-5311-4E33-B442-328A94F1155D}.Release|Mixed Platforms.Build.0 = Release|x86
+		{8D3241FE-5311-4E33-B442-328A94F1155D}.Release|x86.ActiveCfg = Release|x86
+		{8D3241FE-5311-4E33-B442-328A94F1155D}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{042F9B87-0FC3-43E6-92C7-1ADE684EE92A} = {00BECED1-9F10-465B-B046-E9CAD92EE972}
+		{F460D6E7-7798-4A0B-A418-0075694BD2EF} = {00BECED1-9F10-465B-B046-E9CAD92EE972}
+		{52EF4729-B2C5-4AD6-AA8D-FD02BAD1639B} = {00BECED1-9F10-465B-B046-E9CAD92EE972}
+	EndGlobalSection
+EndGlobal

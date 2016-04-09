@@ -1,0 +1,395 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<GroupAddress-Export xmlns="http://knx.org/xml/ga-export/01">
+  <GroupRange Name="Zentral" RangeStart="1" RangeEnd="2047">
+    <GroupRange Name="schalten" RangeStart="1" RangeEnd="255">
+      <GroupAddress Name="Zentral-Aus" Address="0/0/1" />
+      <GroupAddress Name="Zentral Aus Zimmer Nord DG" Address="0/0/2" />
+      <GroupAddress Name="Zentral Aus Zimmer Ost DG" Address="0/0/3" />
+      <GroupAddress Name="Zentral Aus Zimmer Süd DG" Address="0/0/4" />
+      <GroupAddress Name="Zentral Aus Zimmer West DG" Address="0/0/5" />
+      <GroupAddress Name="Zentral Aus Wellness EG" Address="0/0/6" />
+      <GroupAddress Name="Zentral Aus Zimmer Ost Apartment KG" Address="0/0/7" />
+      <GroupAddress Name="Zentral Aus Küche OG" Address="0/0/8" />
+      <GroupAddress Name="Zentral Aus Wohnzimmer OG" Address="0/0/9" />
+      <GroupAddress Name="Zentral Aus Zimmer Nord Apartment" Address="0/0/10" />
+      <GroupAddress Name="Zentral Aus Wohnzimmer Apartment" Address="0/0/11" />
+      <GroupAddress Name="Zentral-Aus Apartment" Address="0/0/12" />
+      <GroupAddress Name="Zentral-Aus Privat Heizung Standby" Address="0/0/13" />
+      <GroupAddress Name="Zentral Aus Privat Heizung Frostschutz" Address="0/0/14" />
+      <GroupAddress Name="Zentral-Aus Apartment Heizung Standby" Address="0/0/15" />
+      <GroupAddress Name="Zentral Aus Apartment Heizung Frostschutz" Address="0/0/16" />
+    </GroupRange>
+    <GroupRange Name="Szenen" RangeStart="256" RangeEnd="511">
+      <GroupAddress Name="Szene ein" Address="0/1/0" />
+    </GroupRange>
+    <GroupRange Name="Sonstiges" RangeStart="512" RangeEnd="767">
+      <GroupAddress Name="Dämmerung" Address="0/2/0" />
+      <GroupAddress Name="Bewegungsmelder Garage aussen sperren" Address="0/2/1" />
+      <GroupAddress Name="Windalarm Fensterjalousie" Address="0/2/2" />
+      <GroupAddress Name="Regen" Address="0/2/3" />
+      <GroupAddress Name="Temperatur Wert" Address="0/2/4" />
+      <GroupAddress Name="Wind Wert" Address="0/2/5" />
+      <GroupAddress Name="Helligkeit Wert" Address="0/2/6" />
+      <GroupAddress Name="Uhrzeit" Address="0/2/7" />
+      <GroupAddress Name="Datum" Address="0/2/8" />
+      <GroupAddress Name="Datum und Uhrzeit anfordern" Address="0/2/9" />
+      <GroupAddress Name="Windalarm Dachjalousie" Address="0/2/10" />
+    </GroupRange>
+    <GroupRange Name="Alarmmeldung" RangeStart="768" RangeEnd="1023">
+      <GroupAddress Name="Alarm vor Garage" Address="0/3/0" />
+      <GroupAddress Name="Alarmierung vor Garage sperren" Address="0/3/1" />
+      <GroupAddress Name="Alarm Gang Garage" Address="0/3/2" />
+      <GroupAddress Name="Alarm Gang Garage sperren" Address="0/3/3" />
+    </GroupRange>
+  </GroupRange>
+  <GroupRange Name="Licht" RangeStart="2048" RangeEnd="4095">
+    <GroupRange Name="schalten" RangeStart="2048" RangeEnd="2303">
+      <GroupAddress Name="Licht Bad Ost DG e/a" Address="1/0/0" />
+      <GroupAddress Name="Licht Stiegenhaus Schrank DG e/a" Address="1/0/1" />
+      <GroupAddress Name="Licht Bad West DG  e/a" Address="1/0/2" />
+      <GroupAddress Name="Licht Bett links Zimmer Süd e/a" Address="1/0/3" />
+      <GroupAddress Name="Licht aussen Zimmer DG Süd e/a" Address="1/0/4" />
+      <GroupAddress Name="Licht rechts lesen Zimmer Süd e/a" Address="1/0/5" />
+      <GroupAddress Name="Licht links lesen Zimmer Süd e/a" Address="1/0/6" />
+      <GroupAddress Name="Licht Bett rechts Zimmer Süd e/a" Address="1/0/7" />
+      <GroupAddress Name="Licht Bild Mitte Zimmer Süd e/a" Address="1/0/8" />
+      <GroupAddress Name="Licht außen DG West e/a" Address="1/0/9" />
+      <GroupAddress Name="Licht Bild Mitte Zimmer West e/a" Address="1/0/10" />
+      <GroupAddress Name="Licht Bett links Zimmer West e/a" Address="1/0/11" />
+      <GroupAddress Name="Licht rechts lesen Zimmer West e/a" Address="1/0/12" />
+      <GroupAddress Name="Licht links lesen Zimmer West e/a" Address="1/0/13" />
+      <GroupAddress Name="Licht Bett rechts Zimmer West e/a" Address="1/0/14" />
+      <GroupAddress Name="Licht Bild Mitte Zimmer Nord e/a" Address="1/0/15" />
+      <GroupAddress Name="Licht links lesen Zimmer Nord e/a" Address="1/0/16" />
+      <GroupAddress Name="Licht Bett links Zimmer Nord e/a" Address="1/0/17" />
+      <GroupAddress Name="Licht Bett rechts Zimmer Nord e/a" Address="1/0/18" />
+      <GroupAddress Name="Licht rechts lesen Zimmer Nord e/a" Address="1/0/19" />
+      <GroupAddress Name="Licht Bett links Zimmer Ost e/a" Address="1/0/20" />
+      <GroupAddress Name="Licht rechts lesen Zimmer Ost e/a" Address="1/0/21" />
+      <GroupAddress Name="Licht links lesen Zimmer Ost e/a" Address="1/0/22" />
+      <GroupAddress Name="Licht Bild Mitte Zimmer Ost e/a" Address="1/0/23" />
+      <GroupAddress Name="Licht Bett rechts Zimmer Ost e/a" Address="1/0/24" />
+      <GroupAddress Name="Licht LED indirekt Küche e/a" Address="1/0/25" />
+      <GroupAddress Name="Licht WC OG e/a" Address="1/0/26" />
+      <GroupAddress Name="Licht Weinkasten Wohnzimmer e/a" Address="1/0/27" />
+      <GroupAddress Name="Licht indirekt Nord Wohnzimmer e/a" Address="1/0/28" />
+      <GroupAddress Name="Licht Waschküche e/a" Address="1/0/29" />
+      <GroupAddress Name="Licht aussen Terrasse Ost e/a" Address="1/0/30" />
+      <GroupAddress Name="Licht Wintergarten Wand e/a" Address="1/0/31" />
+      <GroupAddress Name="Licht Decke Zimmer Ost e/a" Address="1/0/32" />
+      <GroupAddress Name="Licht Gang DG e/a" Address="1/0/33" />
+      <GroupAddress Name="Licht Decke Zimmer Nord e/a" Address="1/0/34" />
+      <GroupAddress Name="Licht Decke Zimmer West e/a" Address="1/0/35" />
+      <GroupAddress Name="Licht Decke Zimmer Süd e/a" Address="1/0/36" />
+      <GroupAddress Name="Licht Decke Schrankraum e/a" Address="1/0/37" />
+      <GroupAddress Name="Licht Spots Wohnzimmer e/a" Address="1/0/38" />
+      <GroupAddress Name="Licht Hauptlampe Wohnzimmer Süd e/a" Address="1/0/39" />
+      <GroupAddress Name="Licht Esstisch e/a" Address="1/0/40" />
+      <GroupAddress Name="Licht Hauptlampe Wohnzimmer Nord e/a" Address="1/0/41" />
+      <GroupAddress Name="Licht Gang OG e/a" Address="1/0/42" />
+      <GroupAddress Name="Licht Küche Deckenlampe e/a" Address="1/0/43" />
+      <GroupAddress Name="Licht Testausgang e/a" Address="1/0/44" />
+      <GroupAddress Name="Licht Hängelampen Küche e/a" Address="1/0/45" />
+      <GroupAddress Name="Licht Stiegenhaus und Vorraum DG e/a" Address="1/0/46" />
+      <GroupAddress Name="Licht Abstellraum EG e/a" Address="1/0/47" />
+      <GroupAddress Name="Licht Gang Garage EG e/a" Address="1/0/48" />
+      <GroupAddress Name="Licht LED Vorraum Wellness e/a" Address="1/0/49" />
+      <GroupAddress Name="Licht Schiraum e/a" Address="1/0/50" />
+      <GroupAddress Name="Licht LED Wellness e/a" Address="1/0/51" />
+      <GroupAddress Name="Licht Sternenhimmel Wellness e/a" Address="1/0/52" />
+      <GroupAddress Name="Licht Dusche Wellness e/a" Address="1/0/53" />
+      <GroupAddress Name="Licht WC EG e/a" Address="1/0/54" />
+      <GroupAddress Name="Licht aussen Garage e/a" Address="1/0/55" />
+      <GroupAddress Name="Licht Garten e/a" Address="1/0/56" />
+      <GroupAddress Name="Licht Vorraum Apartment EG e/a" Address="1/0/57" />
+      <GroupAddress Name="Licht WC Apartment EG e/a" Address="1/0/58" />
+      <GroupAddress Name="Licht Bad Apartment EG e/a" Address="1/0/59" />
+      <GroupAddress Name="Licht Bett links Zimmer Nord Apartment EG e/a" Address="1/0/60" />
+      <GroupAddress Name="Licht rechts lesen Zimmer Nord Apartment EG e/a" Address="1/0/61" />
+      <GroupAddress Name="Licht links lesen Zimmer Nord Apartment EG e/a" Address="1/0/62" />
+      <GroupAddress Name="Licht Bett rechts Zimmer Nord Apartment EG e/a" Address="1/0/63" />
+      <GroupAddress Name="Licht Bild Mitte Zimmer Nord Apartment EG e/a" Address="1/0/64" />
+      <GroupAddress Name="Licht Decke Zimmer Nord Apartment EG e/a" Address="1/0/65" />
+      <GroupAddress Name="Licht Bett links Zimmer Ost Apartment EG e/a" Address="1/0/66" />
+      <GroupAddress Name="Licht rechts lesen Zimmer Ost Apartment EG e/a" Address="1/0/67" />
+      <GroupAddress Name="Licht links lesen Zimmer Ost Apartment EG e/a" Address="1/0/68" />
+      <GroupAddress Name="Licht Bett rechts Zimmer Ost Apartment EG e/a" Address="1/0/69" />
+      <GroupAddress Name="Licht Bild Mitte Zimmer Ost Apartment EG e/a" Address="1/0/70" />
+      <GroupAddress Name="Licht Decke Zimmer Ost Apartment EG e/a" Address="1/0/71" />
+      <GroupAddress Name="Licht Spots Decke WZ Apartment EG e/a" Address="1/0/72" />
+      <GroupAddress Name="Licht Decke WZ Apartment EG e/a" Address="1/0/73" />
+      <GroupAddress Name="Licht Esstisch WZ Apartment EG e/a" Address="1/0/74" />
+      <GroupAddress Name="Licht Küche Apartment EG e/a" Address="1/0/75" />
+      <GroupAddress Name="Licht Aussenbereich WZ Apartment EG e/a" Address="1/0/76" />
+      <GroupAddress Name="Licht Weihnachtsbaum e/a" Address="1/0/77" />
+      <GroupAddress Name="Licht Wintergarten Decke e/a" Address="1/0/78" />
+      <GroupAddress Name="Licht Vorraum Apartment EG Taster neu e/a" Address="1/0/79" />
+      <GroupAddress Name="Licht Vorraum DG Taster neu e/a" Address="1/0/80" />
+      <GroupAddress Name="Licht Schrankraum DG Tatster neu e/a" Address="1/0/81" />
+      <GroupAddress Name="Licht Wandjalousie Zimmer West DG e/a" Address="1/0/82" />
+      <GroupAddress Name="Licht Bild und Wandjalousie Zimmer West DG e/a" Address="1/0/83" />
+      <GroupAddress Name="Licht Bild Mitte Automatik Zimmer West e/a" Address="1/0/84" />
+    </GroupRange>
+    <GroupRange Name="dimmen relativ" RangeStart="2304" RangeEnd="2559">
+      <GroupAddress Name="Licht Decke Zimmer Ost dimmen relativ" Address="1/1/0" />
+      <GroupAddress Name="Licht Gang DG dimmen relativ" Address="1/1/1" />
+      <GroupAddress Name="Licht Decke Zimmer Nord dimmen relativ" Address="1/1/2" />
+      <GroupAddress Name="Licht Decke Zimmer West dimmen relativ" Address="1/1/3" />
+      <GroupAddress Name="Licht Decke Zimmer Süd dimmen relativ" Address="1/1/4" />
+      <GroupAddress Name="Licht Decke Schrankraum dimmen relativ" Address="1/1/5" />
+      <GroupAddress Name="Licht Spots Wohnzimmer dimmen relativ" Address="1/1/6" />
+      <GroupAddress Name="Licht Hauptlampe Wohnzimmer Süd dimmen relativ" Address="1/1/7" />
+      <GroupAddress Name="Licht Esstisch dimmen relativ" Address="1/1/8" />
+      <GroupAddress Name="Licht Hauptlampe Wohnzimmer Nord dimmen relativ" Address="1/1/9" />
+      <GroupAddress Name="Licht Gang OG dimmen relativ" Address="1/1/10" />
+      <GroupAddress Name="Licht Küche Deckenlampe dimmen relativ" Address="1/1/11" />
+      <GroupAddress Name="Licht Testausgang dimmen relativ" Address="1/1/12" />
+      <GroupAddress Name="Licht Hängelampen Küche dimmen relativ" Address="1/1/13" />
+      <GroupAddress Name="Licht LED indirekt Küche dimmen relativ" Address="1/1/14" />
+      <GroupAddress Name="Licht LED Vorraum Wellness dimmen relativ" Address="1/1/15" />
+      <GroupAddress Name="Licht LED Wellness dimmen relativ" Address="1/1/16" />
+      <GroupAddress Name="Licht Vorraum Apartment EG dimmen relativ" Address="1/1/17" />
+      <GroupAddress Name="Licht Decke Zimmer Ost Apartment EG dimmen relativ" Address="1/1/18" />
+      <GroupAddress Name="Licht Decke Zimmer Nord Apartment EG dimmen relativ" Address="1/1/19" />
+      <GroupAddress Name="Licht Spots Decke WZ Apartment EG dimmen relativ" Address="1/1/20" />
+      <GroupAddress Name="Licht Decke WZ Apartment EG dimmen relativ" Address="1/1/21" />
+      <GroupAddress Name="Licht Esstisch WZ Apartment EG dimmen relativ" Address="1/1/22" />
+      <GroupAddress Name="Licht Wandjalousie Zimmer West DG dimmen relativ" Address="1/1/23" />
+    </GroupRange>
+    <GroupRange Name="dimmen absolut" RangeStart="2560" RangeEnd="2815">
+      <GroupAddress Name="Licht Decke Zimmer Ost dimmen absolut" Address="1/2/0" />
+      <GroupAddress Name="Licht Gang DG dimmen absolut" Address="1/2/1" />
+      <GroupAddress Name="Licht Decke Zimmer Nord dimmen absolut" Address="1/2/2" />
+      <GroupAddress Name="Licht Decke Zimmer West dimmen absolut" Address="1/2/3" />
+      <GroupAddress Name="Licht Decke Zimmer Süd dimmen absolut" Address="1/2/4" />
+      <GroupAddress Name="Licht Decke Schrankraum dimmen absolut" Address="1/2/5" />
+      <GroupAddress Name="Licht Spots Wohnzimmer dimmen absolut" Address="1/2/6" />
+      <GroupAddress Name="Licht Hauptlampe Wohnzimmer Süd dimmen absolut" Address="1/2/7" />
+      <GroupAddress Name="Licht Esstisch dimmen absolut" Address="1/2/8" />
+      <GroupAddress Name="Licht Hauptlampe Wohnzimmer Nord dimmen absolut" Address="1/2/9" />
+      <GroupAddress Name="Licht Gang OG dimmen absolut" Address="1/2/10" />
+      <GroupAddress Name="Licht Küche Deckenlampe dimmen absolut" Address="1/2/11" />
+      <GroupAddress Name="Licht Testausgang dimmen absolut" Address="1/2/12" />
+      <GroupAddress Name="Licht Hängelampen Küche dimmen absolut" Address="1/2/13" />
+      <GroupAddress Name="Licht LED indirekt Küche dimmen absolut" Address="1/2/14" />
+      <GroupAddress Name="Licht LED Vorraum Wellness dimmen absolut" Address="1/2/15" />
+      <GroupAddress Name="Licht LED Wellness dimmen absolut" Address="1/2/16" />
+      <GroupAddress Name="Licht Vorraum Apartment EG dimmen absolut" Address="1/2/17" />
+      <GroupAddress Name="Licht Decke Zimmer Ost Apartment EG dimmen absolut" Address="1/2/18" />
+      <GroupAddress Name="Licht Decke Zimmer Nord Apartment EG dimmen absolut" Address="1/2/19" />
+      <GroupAddress Name="Licht Spots Decke WZ Apartment EG dimmen absolut" Address="1/2/20" />
+      <GroupAddress Name="Licht Decke WZ Apartment EG dimmen absolut" Address="1/2/21" />
+      <GroupAddress Name="Licht Esstisch WZ Apartment EG dimmen absolut" Address="1/2/22" />
+      <GroupAddress Name="Licht Wandjalousie Zimmer West DG dimmen absolut" Address="1/2/23" />
+    </GroupRange>
+    <GroupRange Name="schalten status" RangeStart="2816" RangeEnd="3071">
+      <GroupAddress Name="Licht Bad Ost DG status" Address="1/3/0" />
+      <GroupAddress Name="Licht Stiegenhaus Schrank DG status" Address="1/3/1" />
+      <GroupAddress Name="Licht Bad West DG status" Address="1/3/2" />
+      <GroupAddress Name="Licht Bett links Zimmer Süd status" Address="1/3/3" />
+      <GroupAddress Name="Licht aussen Zimmer DG Süd status" Address="1/3/4" />
+      <GroupAddress Name="Licht rechts lesen Zimmer Süd status" Address="1/3/5" />
+      <GroupAddress Name="Licht links lesen Zimmer Süd status" Address="1/3/6" />
+      <GroupAddress Name="Licht Bett rechts Zimmer Süd status" Address="1/3/7" />
+      <GroupAddress Name="Licht Bild Mitte Zimmer Süd status" Address="1/3/8" />
+      <GroupAddress Name="Licht aussen DG West status" Address="1/3/9" />
+      <GroupAddress Name="Licht Bild Mitte Zimmer West status" Address="1/3/10" />
+      <GroupAddress Name="Licht Bett links Zimmer West status" Address="1/3/11" />
+      <GroupAddress Name="Licht rechts lesen Zimmer West status" Address="1/3/12" />
+      <GroupAddress Name="Licht links lesen Zimmer West status" Address="1/3/13" />
+      <GroupAddress Name="Licht Bett rechts Zimmer West status" Address="1/3/14" />
+      <GroupAddress Name="Licht Bild Mitte Zimmer Nord status" Address="1/3/15" />
+      <GroupAddress Name="Licht links lesen Zimmer Nord status" Address="1/3/16" />
+      <GroupAddress Name="Licht Bett links Zimmer Nord status" Address="1/3/17" />
+      <GroupAddress Name="Licht Bett rechts Zimmer Nord status" Address="1/3/18" />
+      <GroupAddress Name="Licht rechts lesen Zimmer Nord status" Address="1/3/19" />
+      <GroupAddress Name="Licht Bett links Zimmer Ost status" Address="1/3/20" />
+      <GroupAddress Name="Licht rechts lesen Zimmer Ost status" Address="1/3/21" />
+      <GroupAddress Name="Licht links lesen Zimmer Ost status" Address="1/3/22" />
+      <GroupAddress Name="Licht Bild Mitte Zimmer Ost status" Address="1/3/23" />
+      <GroupAddress Name="Licht Bett rechts Zimmer Ost status" Address="1/3/24" />
+      <GroupAddress Name="Licht LED indirekt Küche status" Address="1/3/25" />
+      <GroupAddress Name="Licht WC OG status" Address="1/3/26" />
+      <GroupAddress Name="Licht Weinkasten Wohnzimmer status" Address="1/3/27" />
+      <GroupAddress Name="Licht indirekt Nord Wohnzimmer status" Address="1/3/28" />
+      <GroupAddress Name="Licht Waschküche status" Address="1/3/29" />
+      <GroupAddress Name="Licht aussen Terrasse Ost status" Address="1/3/30" />
+      <GroupAddress Name="Licht Wintergarten Wand status" Address="1/3/31" />
+      <GroupAddress Name="Licht Decke Zimmer Ost status" Address="1/3/32" />
+      <GroupAddress Name="Licht Gang DG status" Address="1/3/33" />
+      <GroupAddress Name="Licht Decke Zimmer Nord status" Address="1/3/34" />
+      <GroupAddress Name="Licht Decke Zimmer West status" Address="1/3/35" />
+      <GroupAddress Name="Licht Decke Zimmer Süd status" Address="1/3/36" />
+      <GroupAddress Name="Licht Decke Schrankraum status" Address="1/3/37" />
+      <GroupAddress Name="Licht Spots Wohnzimmer status" Address="1/3/38" />
+      <GroupAddress Name="Licht Hauptlampe Wohnzimmer Süd status" Address="1/3/39" />
+      <GroupAddress Name="Licht Esstisch status" Address="1/3/40" />
+      <GroupAddress Name="Licht Hauptlampe Wohnzimmer Nord status" Address="1/3/41" />
+      <GroupAddress Name="Licht Gang OG status" Address="1/3/42" />
+      <GroupAddress Name="Licht Küche Deckenlampe status" Address="1/3/43" />
+      <GroupAddress Name="Licht Testausgang status" Address="1/3/44" />
+      <GroupAddress Name="Licht Hängelampen Küche status" Address="1/3/45" />
+      <GroupAddress Name="Licht Stiegenhaus status" Address="1/3/46" />
+      <GroupAddress Name="Licht Abstellraum EG status" Address="1/3/47" />
+      <GroupAddress Name="Licht Gang Garage EG status" Address="1/3/48" />
+      <GroupAddress Name="Licht LED Vorraum Wellness status" Address="1/3/49" />
+      <GroupAddress Name="Licht Schiraum status" Address="1/3/50" />
+      <GroupAddress Name="Licht LED Wellness status" Address="1/3/51" />
+      <GroupAddress Name="Licht Sternenhimmel Wellness status" Address="1/3/52" />
+      <GroupAddress Name="Licht Dusche Wellness status" Address="1/3/53" />
+      <GroupAddress Name="Licht WC EG status" Address="1/3/54" />
+      <GroupAddress Name="Licht aussen Garage status" Address="1/3/55" />
+      <GroupAddress Name="Licht Garten status" Address="1/3/56" />
+      <GroupAddress Name="Licht Vorraum Apartment EG status" Address="1/3/57" />
+      <GroupAddress Name="Licht WC Apartment EG status" Address="1/3/58" />
+      <GroupAddress Name="Licht Bad Apartment EG status" Address="1/3/59" />
+      <GroupAddress Name="Licht Bett links Zimmer Nord Apartment EG status" Address="1/3/60" />
+      <GroupAddress Name="Licht rechts lesen Zimmer Nord Apartment EG status" Address="1/3/61" />
+      <GroupAddress Name="Licht links lesen Zimmer Nord Apartment EG status" Address="1/3/62" />
+      <GroupAddress Name="Licht Bett rechts Zimmer Nord Apartment EG status" Address="1/3/63" />
+      <GroupAddress Name="Licht Bild Mitte Zimmer Nord Apartment EG status" Address="1/3/64" />
+      <GroupAddress Name="Licht Decke Zimmer Nord Apartment EG status" Address="1/3/65" />
+      <GroupAddress Name="Licht Bett links Zimmer Ost Apartment EG status" Address="1/3/66" />
+      <GroupAddress Name="Licht rechts lesen Zimmer Ost Apartment EG status" Address="1/3/67" />
+      <GroupAddress Name="Licht links lesen Zimmer Ost Apartment EG status" Address="1/3/68" />
+      <GroupAddress Name="Licht Bett rechts Zimmer Ost Apartment EG status" Address="1/3/69" />
+      <GroupAddress Name="Licht Bild Mitte Zimmer Ost Apartment EG status" Address="1/3/70" />
+      <GroupAddress Name="Licht Decke Zimmer Ost Apartment EG status" Address="1/3/71" />
+      <GroupAddress Name="Licht Spots Decke WZ Apartment EG status" Address="1/3/72" />
+      <GroupAddress Name="Licht Decke WZ Apartment EG status" Address="1/3/73" />
+      <GroupAddress Name="Licht Esstisch WZ Apartment EG status" Address="1/3/74" />
+      <GroupAddress Name="Licht Küche Apartment EG status" Address="1/3/75" />
+      <GroupAddress Name="Licht Aussenbereich WZ Apartment EG status" Address="1/3/76" />
+      <GroupAddress Name="Licht Weihnachtsbaum status" Address="1/3/77" />
+      <GroupAddress Name="Licht Wintergarten Decke status" Address="1/3/78" />
+      <GroupAddress Name="Licht Wandjalousie Zimmer West DG status" Address="1/3/79" />
+    </GroupRange>
+    <GroupRange Name="dimmen status" RangeStart="3072" RangeEnd="3327">
+      <GroupAddress Name="Licht Decke Zimmer Ost dimmen status" Address="1/4/0" />
+      <GroupAddress Name="Licht Gang DG dimmen status" Address="1/4/1" />
+      <GroupAddress Name="Licht Decke Zimmer Nord dimmen status" Address="1/4/2" />
+      <GroupAddress Name="Licht Decke Zimmer West dimmen status" Address="1/4/3" />
+      <GroupAddress Name="Licht Decke Zimmer Süd dimmen status" Address="1/4/4" />
+      <GroupAddress Name="Licht Decke Schrankraum dimmen status" Address="1/4/5" />
+      <GroupAddress Name="Licht Spots Wohnzimmer dimmen status" Address="1/4/6" />
+      <GroupAddress Name="Licht Hauptlampe Wohnzimmer Süd dimmen status" Address="1/4/7" />
+      <GroupAddress Name="Licht Esstisch dimmen status" Address="1/4/8" />
+      <GroupAddress Name="Licht Hauptlampe Wohnzimmer Nord dimmen status" Address="1/4/9" />
+      <GroupAddress Name="Licht Gang OG dimmen status" Address="1/4/10" />
+      <GroupAddress Name="Licht Küche Deckenlampe dimmen status" Address="1/4/11" />
+      <GroupAddress Name="Licht Testausgang dimmen status" Address="1/4/12" />
+      <GroupAddress Name="Licht Hängelampen Küche dimmen status" Address="1/4/13" />
+      <GroupAddress Name="Licht LED indirekt Küche dimmen status" Address="1/4/14" />
+      <GroupAddress Name="Licht LED Vorraum Wellness dimmen status" Address="1/4/15" />
+      <GroupAddress Name="Licht LED Wellness dimmen status" Address="1/4/16" />
+      <GroupAddress Name="Licht Vorraum Apartment EG dimmen status" Address="1/4/17" />
+      <GroupAddress Name="Licht Decke Zimmer Ost Apartment dimmen status" Address="1/4/18" />
+      <GroupAddress Name="Licht Decke Zimmer Nord Apartment EG dimmen status" Address="1/4/19" />
+      <GroupAddress Name="Licht Spots Decke WZ Apartment EG dimmen status" Address="1/4/20" />
+      <GroupAddress Name="Licht Decke WZ Apartment EG dimmen status" Address="1/4/21" />
+      <GroupAddress Name="Licht Esstisch WZ Apartment EG dimmen status" Address="1/4/22" />
+      <GroupAddress Name="Licht Wandjalousie Zimmer West DG dimmen status" Address="1/4/23" />
+    </GroupRange>
+    <GroupRange Name="sperren" RangeStart="3328" RangeEnd="3583">
+      <GroupAddress Name="nach 10 Uhr sperren e/a" Address="1/5/0" />
+    </GroupRange>
+    <GroupRange Name="Automatik 1 und 2" RangeStart="3584" RangeEnd="3839">
+      <GroupAddress Name="Licht Decke Zimmer Ost  Nacht e/a" Address="1/6/0" />
+      <GroupAddress Name="Licht Decke Zimmer Nord Nacht e/a" Address="1/6/1" />
+      <GroupAddress Name="Licht Decke Zimmer West Nacht e/a" Address="1/6/2" />
+      <GroupAddress Name="Licht Decke Zimmer Süd Nacht e/a" Address="1/6/3" />
+      <GroupAddress Name="Licht Decke Zimmer Nord Appartment e/a" Address="1/6/4" />
+      <GroupAddress Name="Licht Decke Zimmer Ost Apartment e/a" Address="1/6/5" />
+    </GroupRange>
+  </GroupRange>
+  <GroupRange Name="Lüfter" RangeStart="4096" RangeEnd="6143">
+    <GroupRange Name="schalten" RangeStart="4608" RangeEnd="4863">
+      <GroupAddress Name="Lüfter Bad West DG e/a" Address="2/2/0" />
+      <GroupAddress Name="Lüfter Bad Ost DG e/a" Address="2/2/1" />
+      <GroupAddress Name="Lüfter WC OG e/a" Address="2/2/2" />
+      <GroupAddress Name="Lüfter Schiraum e/a" Address="2/2/3" />
+      <GroupAddress Name="Lüfter Bad Apartment e/a" Address="2/2/4" />
+    </GroupRange>
+    <GroupRange Name="status" RangeStart="4864" RangeEnd="5119">
+      <GroupAddress Name="Lüfter Bad West DG status" Address="2/3/0" />
+      <GroupAddress Name="Lüfter Bad Ost DG status" Address="2/3/1" />
+      <GroupAddress Name="Lüfter WC OG status" Address="2/3/2" />
+      <GroupAddress Name="Lüfter Schiraum status" Address="2/3/3" />
+      <GroupAddress Name="Lüfter Bad Apartment status" Address="2/3/4" />
+    </GroupRange>
+  </GroupRange>
+  <GroupRange Name="Heizung" RangeStart="6144" RangeEnd="8191">
+    <GroupRange Name="Temperaturen" RangeStart="6144" RangeEnd="6399">
+      <GroupAddress Name="Heizung Wintergarten Ist-Temp." Address="3/0/0" />
+      <GroupAddress Name="Heizung Privat Radiatoren Ist-Temp." Address="3/0/1" />
+      <GroupAddress Name="Heizung Apartment Radiatoren Ist-Temp." Address="3/0/2" />
+      <GroupAddress Name="Heizung Wintergarten Radiatoren Soll-Temp." Address="3/0/3" />
+      <GroupAddress Name="Heizung Privat Radiatoren Soll-Temp." Address="3/0/4" />
+      <GroupAddress Name="Heizung Apartment Radiatoren Soll-Temp." Address="3/0/5" />
+    </GroupRange>
+    <GroupRange Name="Betriebsart" RangeStart="6400" RangeEnd="6655">
+      <GroupAddress Name="Heizung Wintergarten Betriebsmodusumschaltung" Address="3/1/0" />
+      <GroupAddress Name="Heizung Wintergarten Betriebsart status" Address="3/1/1" />
+      <GroupAddress Name="Heizung Privat Radiatoren Betriebsmodusumschaltung" Address="3/1/2" />
+      <GroupAddress Name="Heizung Privat Radiatoren Betriebsart status" Address="3/1/3" />
+      <GroupAddress Name="Heizung Apartment Radiatoren Betriebsmodusumschaltung" Address="3/1/4" />
+      <GroupAddress Name="Heizung Apartment Radiatoren Betriebsart status" Address="3/1/5" />
+    </GroupRange>
+  </GroupRange>
+  <GroupRange Name="Jalousien" RangeStart="8192" RangeEnd="10239">
+    <GroupRange Name="Kurzzeitbetrieb" RangeStart="8192" RangeEnd="8447">
+      <GroupAddress Name="Jalousie Wintergarten Ost Türe kurz" Address="4/0/0" />
+      <GroupAddress Name="Jalousie Wintergarten Ost Fenster kurz" Address="4/0/1" />
+      <GroupAddress Name="Jalousie Wintergarten Süd links kurz" Address="4/0/2" />
+      <GroupAddress Name="Jalousie Wintergarten Süd mitte kurz" Address="4/0/3" />
+      <GroupAddress Name="Jalousie Wintergarten Süd rechts kurz" Address="4/0/4" />
+      <GroupAddress Name="Jalousie Wintergarten West kurz" Address="4/0/5" />
+      <GroupAddress Name="Jalousie Wintergarten Nord kurz" Address="4/0/6" />
+      <GroupAddress Name="Jalousie Wintergarten Dach kurz" Address="4/0/7" />
+      <GroupAddress Name="Jalousien alle kurz" Address="4/0/8" />
+    </GroupRange>
+    <GroupRange Name="Langzeitbetrieb" RangeStart="8448" RangeEnd="8703">
+      <GroupAddress Name="Jalousie Wintergarten Ost Türe lang" Address="4/1/0" />
+      <GroupAddress Name="Jalousie Wintergarten Ost Fenster lang" Address="4/1/1" />
+      <GroupAddress Name="Jalousie Wintergarten Süd links lang" Address="4/1/2" />
+      <GroupAddress Name="Jalousie Wintergarten Süd mitte lang" Address="4/1/3" />
+      <GroupAddress Name="Jalousie Wintergarten Süd rechts lang" Address="4/1/4" />
+      <GroupAddress Name="Jalousie Wintergarten West lang" Address="4/1/5" />
+      <GroupAddress Name="Jalousie Wintergarten Nord lang" Address="4/1/6" />
+      <GroupAddress Name="Jalousie Wintergarten Dach lang" Address="4/1/7" />
+      <GroupAddress Name="Jalousien alle lang" Address="4/1/8" />
+    </GroupRange>
+    <GroupRange Name="Sonnenautomatik" RangeStart="8704" RangeEnd="8959">
+      <GroupAddress Name="Automatik Jalousie Wintergarten Ost" Address="4/2/0" />
+      <GroupAddress Name="Automatik Jalousie Wintergarten Süd" Address="4/2/1" />
+      <GroupAddress Name="Automatik Jalousie Wintergarten West" Address="4/2/2" />
+      <GroupAddress Name="Reserve" Address="4/2/3" />
+      <GroupAddress Name="Reserve" Address="4/2/4" />
+      <GroupAddress Name="Automatik Jalousie Wintergarten Dach" Address="4/2/5" />
+      <GroupAddress Name="Automatik Fenster freischalten" Address="4/2/6" />
+      <GroupAddress Name="Automatik Dach freischalten" Address="4/2/7" />
+      <GroupAddress Name="Automatik auffahren wegen Heizung" Address="4/2/8" />
+    </GroupRange>
+    <GroupRange Name="status" RangeStart="8960" RangeEnd="9215">
+      <GroupAddress Name="Jalousie Wintergarten Ost Türe Position status" Address="4/3/0" />
+      <GroupAddress Name="Jalousie Wintergarten Ost Fenster Position status" Address="4/3/1" />
+      <GroupAddress Name="Jalousie Wintergarten Süd links Position status" Address="4/3/2" />
+      <GroupAddress Name="Jalousie Wintergarten Süd mitte Position status" Address="4/3/3" />
+      <GroupAddress Name="Jalousie Wintergarten Süd rechts Position status" Address="4/3/4" />
+      <GroupAddress Name="Jalousie Wintergarten West Position status" Address="4/3/5" />
+      <GroupAddress Name="Jalousie Wintergarten Nord Position status" Address="4/3/6" />
+      <GroupAddress Name="Jalousie Wintergarten Dach Position status" Address="4/3/7" />
+    </GroupRange>
+    <GroupRange Name="Position anfahren" RangeStart="9216" RangeEnd="9471">
+      <GroupAddress Name="Jalousie Wintergarten Ost Türe Position anfahren" Address="4/4/0" />
+      <GroupAddress Name="Jalousie Wintergarten Ost Fenster Position anfahren" Address="4/4/1" />
+      <GroupAddress Name="Jalousie Wintergarten Süd links Position anfahren" Address="4/4/2" />
+      <GroupAddress Name="Jalousie Wintergarten Süd mitte Position anfahren" Address="4/4/3" />
+      <GroupAddress Name="Jalousie Wintergarten Süd rechts Position anfahren" Address="4/4/4" />
+      <GroupAddress Name="Jalousie Wintergarten West Position anfahren" Address="4/4/5" />
+      <GroupAddress Name="Jalousie Wintergarten Nord Position anfahren" Address="4/4/6" />
+      <GroupAddress Name="Jalousie Wintergarten Dach Position anfahren" Address="4/4/7" />
+      <GroupAddress Name="Jalousien alle Position anfahren" Address="4/4/8" />
+    </GroupRange>
+  </GroupRange>
+</GroupAddress-Export>

@@ -1,0 +1,35 @@
+Sensor EIB Typen
+
+0=Schalten/Tasten EIS1
+1=Dimmen EIS2
+2=Zeit EIS3
+3=Datum EIS4
+4=Sensor/Analogwert EIS5
+5=Dimmen/Position EIS6
+6=Jalousie EIS7
+7=??? EIS8
+8=Sensor/Analogwert EIS9
+9=Sensor/Analogwert EIS10
+10=Sensor/Analogwert EIS^^11
+
+
+<C Type="EIBsensor" IName="KGI14.0.1" V="70" U="0aa5f080-02a3-0d1e-ffff112233445566" Title="Sensor 1" Nio="2" EibAddr="14/0/1" EIBType="4" ForceRemanence="true" MaxValue="100" SourceValHigh="100" DestValHigh="100">
+	<Co K="AQ" U="0aa5f080-02a3-0d1c-ffff112233445566"/>
+	<Co K="Q" U="0aa5f080-02a3-0d1d-ffff112233445566"/>
+	<IoData Ugr="0aa5f073-03d7-0a9d-ffff112233445566" Ugx="0aa5f073-03d7-0a9d-ffff112233445566"/>
+	<Display Type="2" Unit="&lt;v&gt;%" StateOnly="true" Step="5"/>
+</C>
+	
+Ugr/Ugx von einem anderen Actor->IoData verwenden	
+
+Aktor
+
+	<C Type="EIBactor" IName="KGQ0.0.1" V="70" U="0aa5f089-00af-0e41-ffff112233445566" Title="Aktor 1" Nio="1" EibAddr="0/0/1" EIBType="1" SourceValHigh="10" DestValHigh="10">
+		<Co K="I" U="0aa5f089-00af-0e40-ffff112233445566"/>
+		<IoData Ugr="0aa5f073-03d7-0a9d-ffff112233445566" Ugx="0aa5f073-03d7-0a9d-ffff112233445566"/>
+		<Display Unit="&lt;v.1&gt;V"/>
+	</C>
+
+	<C Type="EIBactorCaption" V="70" U="0aa5e63f-0393-5ea5-ffff112233445566" Title="Aktoren"/>
+	<C Type="EIBsensorCaption" V="70" U="0aa5e63f-0393-5ea4-ffff112233445566" Title="Sensoren"/>
+	
