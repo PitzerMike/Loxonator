@@ -81,7 +81,8 @@ namespace Loxonator.Common.Helpers
         {
             if (!leaf.IsActor)
             {
-                templ.OriginalNodes.Where(node => node.Attribute("EibAddr").Value == leaf.Address && node.Attribute("Type").Value == "EIBactor").Remove();
+                if (false) // es soll nie gelöscht werden
+                    templ.OriginalNodes.Where(node => node.Attribute("EibAddr").Value == leaf.Address && node.Attribute("Type").Value == "EIBactor").Remove();
             }
             else
             {
@@ -107,7 +108,8 @@ namespace Loxonator.Common.Helpers
         {
             if (!leaf.IsSensor)
             {
-                templ.OriginalNodes.Where(node => node.Attribute("EibAddr").Value == leaf.Address && node.Attribute("Type").Value == "EIBsensor").Remove();
+                if (false) // es soll nie gelöscht werden
+                    templ.OriginalNodes.Where(node => node.Attribute("EibAddr").Value == leaf.Address && node.Attribute("Type").Value == "EIBsensor").Remove();
             }
             else
             {
