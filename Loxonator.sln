@@ -24,7 +24,6 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TestFiles", "TestFiles", "{52EF4729-B2C5-4AD6-AA8D-FD02BAD1639B}"
 	ProjectSection(SolutionItems) = preProject
 		Resources\TestFiles\Empty.loxone = Resources\TestFiles\Empty.loxone
-		Resources\TestFiles\TestInitial.xml = Resources\TestFiles\TestInitial.xml
 		Resources\TestFiles\TestModified.xml = Resources\TestFiles\TestModified.xml
 	EndProjectSection
 EndProject

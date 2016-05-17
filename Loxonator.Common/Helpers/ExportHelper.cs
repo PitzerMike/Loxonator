@@ -91,8 +91,8 @@ namespace Loxonator.Common.Helpers
                 {
                     foreach (XElement actor in existing)
                     {
-                        actor.Attribute("Title").Value = leaf.Name;
-                        actor.Attribute("EIBType").Value = ((int)leaf.Type).ToString();
+                        actor.SetAttributeValue("Title", leaf.Name);
+                        actor.SetAttributeValue("EIBType", ((int)leaf.Type).ToString());
                     }
                 }
                 else
@@ -118,8 +118,8 @@ namespace Loxonator.Common.Helpers
                 {
                     foreach (XElement actor in existing)
                     {
-                        actor.Attribute("Title").Value = leaf.Name;
-                        actor.Attribute("EIBType").Value = ((int)leaf.Type).ToString();
+                        actor.SetAttributeValue("Title", leaf.Name);
+                        actor.SetAttributeValue("EIBType", ((int)leaf.Type).ToString());
                     }
                 }
                 else
@@ -131,9 +131,49 @@ namespace Loxonator.Common.Helpers
             }
         }
 
+        private static bool IndexOfSnippet(string line, string startSnippet, string endSnippet, int pos, out int startIndex, out int endIndex)
+        {
+            startIndex = line.IndexOf(startSnippet, pos, StringComparison.InvariantCultureIgnoreCase);
+            endIndex = -1;
+            if (startIndex >= pos)
+            {
+                endIndex = line.IndexOf(endSnippet, startIndex + startSnippet.Length, StringComparison.InvariantCultureIgnoreCase);
+                if (endIndex >= startIndex + startSnippet.Length)
+                {
+                    endIndex = endIndex + endSnippet.Length;
+                    return true;
+                }
+            }
+            return false;
+        }
+
+        private static string FixDuplicateAttributes(string projectFile)
+        {
+            StringBuilder fixedXml = new StringBuilder();
+            using (StreamReader reader = new StreamReader(projectFile, Encoding.UTF8))
+            {
+                string line = String.Empty;
+                while ((line = reader.ReadLine()) != null)
+                {
+                    int startIndex, endIndex, pos = 0;
+                    if (IndexOfSnippet(line, "SpStates=\"", "\"", pos, out startIndex, out endIndex))
+                    {
+                        pos = endIndex;
+                        while (IndexOfSnippet(line, "SpStates=\"", "\"", pos, out startIndex, out endIndex))
+                            line = line.Remove(startIndex, endIndex - startIndex);
+                    }
+                    fixedXml.AppendLine(line);
+                }
+            }
+            return fixedXml.ToString();
+        }
+
+        // leider kein wohlgeformtes XML (zB Zeile 7307 Attribut SpStates ist doppelt definiert)
+        // http://stackoverflow.com/questions/6609719/how-to-remove-duplicate-attributes-from-xml-with-c-sharp
         public static void ExportProjectFile(Node root, string projectFile)
         {
-            XDocument project = XDocument.Load(projectFile);
+            string fixedXml = FixDuplicateAttributes(projectFile);
+            XDocument project = XDocument.Parse(fixedXml);
             Template templ = new Template();
             templ.Cr = GetDefaultGuid(project.Root, "IoData", "Cr");
             templ.Pr = GetDefaultGuid(project.Root, "IoData", "Pr");
